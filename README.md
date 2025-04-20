@@ -23,6 +23,7 @@ functions and macros:
     CALLOC(size_t x, size_t y)
     
     REALLOC(void* ptr, size_t size)
+    
     FREE(void *ptr)
     
     These macros corrospond to the implementation of malloc you put in compolation argument
@@ -37,7 +38,7 @@ functions and macros:
     
     sampleReallocLogToInstruments(void* ptr, size_t size)  --returns a reallocation of memory is also will log if its time to sample
     
-    sampleCallocLogToInstruments(void *ptr)  --frees the memory you allocated using free is also will log if its time to sample
+    sampleFreeLogToInstruments(void *ptr)  --frees the memory you allocated using free is also will log if its time to sample
     
     allMallocLogToInstruments(size_t size)  --returns allocates and returns a pointer of where the memory you allocated using malloc is also will log
     
